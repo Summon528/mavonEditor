@@ -32,8 +32,6 @@ var mark = require('markdown-it-mark')
 var taskLists = require('markdown-it-task-lists')
 // container
 var container = require('markdown-it-container')
-//
-var toc = require('markdown-it-toc')
 // add target="_blank" to all link
 var defaultRender = markdown.renderer.rules.link_open || function(tokens, idx, options, env, self) {
     return self.renderToken(tokens, idx, options);
@@ -86,7 +84,6 @@ markdown.use(mihe, hljs_opts)
     .use(miip)
     .use(katex)
     .use(taskLists)
-    .use(toc)
 
 export default {
     data() {

@@ -296,7 +296,7 @@ export default {
         // 图片预览事件监听
         ImagePreviewListener(this);
         // 设置默认焦点
-        if(this.autofocus) {
+        if (this.autofocus) {
             this.getTextareaDom().focus();
         }
         // fullscreen事件
